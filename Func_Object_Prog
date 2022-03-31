@@ -1,6 +1,11 @@
 This sample program demonstrates FUNCTIONAL OBJECT PROGRAMMING.
-See the Modular_Func_Prog file to see how this program is
-written using Modular Functional Programming.
+Functional Object Programming is what's used by the Scala API,
+where all code in the Scala API classes and objects DON'T have
+a mutable state--none of the methods mutate the internal state
+of the class/object.  Like a Scala List class, for example.
+
+See the corresponding Modular_Func_Prog file to see how this
+program is written using MODULAR FUNCTIONAL PROGRAMMING.
 
 object Demo
 {
