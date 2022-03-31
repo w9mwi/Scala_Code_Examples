@@ -1,6 +1,6 @@
 This sample program demonstrates MODULAR FUNCTIONAL PROGRAMMING.
-The sample program BELOW THIS ONE demonstrates how to write the
-same program using FUNCTIONAL OBJECTS PROGRAMMING.
+See the Func_Object_Prog file to see how this program is
+written using Functional Object Programming.
 
 object Demo
 {
