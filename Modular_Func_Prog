@@ -1,6 +1,27 @@
 This sample program demonstrates MODULAR FUNCTIONAL PROGRAMMING.
+A "module" is a "small program piece" with a well-defined
+interface (using Scala traits) that has a hidden implemetation.
+
+The sample code below is an example.  A Scala trait is used to
+define pure functions into logical units of behavior.  In this
+example the trait Ordering is a module.  Notice that type T is
+an undefined type, so it could be used with any data type in
+which its compare() method makes sense (i.e., Float, Double,
+Int, etc.)
+
+trait Ordering
+{
+  type T
+  def compare(x:T, y:T):Int
+}
+
+This undefined type T is just like a generic type
+that can be used in a List (List[T]) so it works with any type.
+
 See the Func_Object_Prog file to see how this program is
 written using Functional Object Programming.
+
+==================================================================
 
 object Demo
 {
