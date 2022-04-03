@@ -15,12 +15,16 @@ trait Ordering
   def compare(x:T, y:T):Int
 }
 
-This undefined type T is defined as a generic type so it
-can represent any data type (i.e., Float, Double, Int,
-String, etc.).  Since the compare() method compares two
-values of type T, the data type represented by type T
-can be any data type for which the compare() method makes
-sense.
+The above "type T" declaration is left undefined.  In other words,
+it's missing is second part, like this for example:
+
+type T Int
+
+Therefore, type T in the above trait Ordering is used as a generic type,
+so it can represent any data type (i.e., Float, Double, Int, String,
+etc.).  Since the compare() method compares two values of type T,
+the data type represented by type T should represent any data type
+for which the compare() method makes sense.
 
 See the Func_Object_Prog file to see how the sample program
 below is written using Functional Object Programming.
